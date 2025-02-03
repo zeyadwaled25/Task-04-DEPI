@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+    <body>
+      <header>
+        <div class="bg-light py-1">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="text-center text-md-start col-md-6 col-12">
+                <span>Super Value Deals - Save more with coupons</span>
+              </div>
+              <div class="d-none d-md-block">
+                <div class="dropdown">
+                  <a class="navbar-brand dropdown-toggle" data-bs-toggle="dropdown">
+                    <img src="images/lang/english.svg" alt="en" class="me-1">English
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item">
+                      <img src="images/lang/english.svg" alt="en" class="me-1">English
+                    </button></li>
+                    <li><button class="dropdown-item">
+                      <img src="images/lang/deutsch.svg" alt="de" class="me-1">English
+                    </button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-page border-bottom">
+          <nav class="header bg-body-white py-4 p-0">
+            <div class="container d-flex justify-content-between align-items-center">
+              <div class="d-flex w-75 align-items-center">
+                <a class="navbar-brand me-5" href="#">
+                  <img src="images/logo/freshcart-logo.svg" alt="Logo">
+                </a>
+                <form class="d-none d-lg-flex w-75 ms-4" role="search">
+                  <div class="search position-relative me-2 w-75">
+                    <input class="form-control" type="search" placeholder="Search for products" aria-label="Search">
+                    <i class="bi bi-search position-absolute top-0 end-0 me-2 mt-2"></i>
+                  </div>
+                  <button class="btn btn-outline-secondary d-flex" type="button"><i class="bi bi-geo-alt me-1"></i><span class="mb-1">Location</span></button>
+                </form>
+              </div>
+              <div class="icons d-flex gap-3">
+                <i class="bi bi-heart position-relative">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                    4
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i>
+                <i class="bi bi-person position-relative"></i>
+                <i class="bi bi-bag-dash position-relative">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                    5
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i>
+              </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg bg-body-white p-0 mb-3">
+            <div class="container">
+              <button class="btn btn-success px-4 me-3">
+                <i class="bi bi-grid me-1"></i>
+                All Departments
+              </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home Default</a></li>
+                      <li><a class="dropdown-item" href="#">Home Modern</a></li>
+                      <li><a class="dropdown-item" href="#">Home Creative</a></li>
+                      <li><a class="dropdown-item" href="#">Home Local Store</a></li>
+                      <li><a class="dropdown-item" href="#">Home Minimalist</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Shop Grid - Filter</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Grid - 3 column</a></li>
+                      <li><a class="dropdown-item" href="#">Shop List - Filter</a></li>
+                      <li><a class="dropdown-item" href="#">Shop - Filter</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Wide</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Single</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Single v2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Wishlist</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Cart</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Store List</a></li>
+                      <li><a class="dropdown-item" href="#">Store Grid</a></li>
+                      <li><a class="dropdown-item" href="#">Store Single</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown-fullwidth">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mega menu
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                      <div class="">
+                        <div class="row p-2 p-lg-4">
+                          <div class="col-lg-3 col-12 mb-3 mb-lg-0">
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item text-success" href="#">Dairy, Bread & Eggs</a></li>
+                            <li><a class="dropdown-item" href="#">Butter</a></li>
+                            <li><a class="dropdown-item" href="#">Milk Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Curd & Yogurt</a></li>
+                            <li><a class="dropdown-item" href="#">Eggs</a></li>
+                            <li><a class="dropdown-item" href="#">Buns & Bakery</a></li>
+                            <li><a class="dropdown-item" href="#">Cheese</a></li>
+                            <li><a class="dropdown-item" href="#">Condensed Milk</a></li>
+                            <li><a class="dropdown-item" href="#">Dairy Products</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-12 mb-3 mb-lg-0">
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item text-success" href="#">Breakfast & Instant Food</a></li>
+                            <li><a class="dropdown-item" href="#">Breakfast Cereal</a></li>
+                            <li><a class="dropdown-item" href="#">Noodles, Pasta & Soup</a></li>
+                            <li><a class="dropdown-item" href="#">Frozen Veg Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Frozen Non-Veg Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Frozen Non-Veg Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Instant Mixes</a></li>
+                            <li><a class="dropdown-item" href="#">Batter</a></li>
+                            <li><a class="dropdown-item" href="#">Fruit and Juices</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-12 mb-3 mb-lg-0">
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item text-success" href="#">Cold Drinks & Juices</a></li>
+                            <li><a class="dropdown-item" href="#">Soft Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Fruit Juices</a></li>
+                            <li><a class="dropdown-item" href="#">Coldpress</a></li>
+                            <li><a class="dropdown-item" href="#">Water & Ice Cubes</a></li>
+                            <li><a class="dropdown-item" href="#">Soda & Mixers</a></li>
+                            <li><a class="dropdown-item" href="#">Health Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Herbal Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Milk Drinks</a></li>
+                          </ul>
+                          </div>
+                          <div class="col-lg-3 col-12 mb-3 mb-lg-0 position-relative">
+                            <img src="images/banner/menu-banner.jpg" alt="" class="img-fluid">
+                            <div class="info position-absolute top-0 ms-3 mt-4">
+                              <p class="mb-3 h5 w-75">Dont miss this offer today.</p>
+                              <button class="btn btn-success btn-sm">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Category</a></li>
+                      <li><a class="dropdown-item" href="#">About us</a></li>
+                      <li><a class="dropdown-item" href="#">404 Error</a></li>
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Sign in</a></li>
+                      <li><a class="dropdown-item" href="#">Signup</a></li>
+                      <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                      <li><a class="dropdown-item" href="#">My Account</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Docs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="container">
+        <section class="slider py-5">
+          <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner rounded overflow-hidden">
+              <div class="carousel-item active position-relative">
+                <img src="images/slider/slide-1.jpg" class="d-block w-100 img-fluid" style="height: 500px" alt="slide 1">
+                <div class="info position-absolute top-50 translate-middle-y ms-5 col-xxl-4 col-lg-5 col-md-7">
+                  <span class="badge rounded-pill text-bg-warning mb-3">Opening Sale Discount 50%</span>
+                  <h1 class="text-dark">SuperMarket For Fresh Grocery</h1>
+                  <p class="text-secondary">Introduced a new model for online grocery shopping and convenient home delivery.</p>
+                  <button class="btn btn-dark d-flex align-items-center"><span>Show Now </span><i class="bi bi-arrow-right mt-1 ms-1"></i></button>
+                </div>
+              </div>
+              <div class="carousel-item position-relative">
+                <img src="images/slider/slide-2.jpg" class="d-block w-100 img-fluid" style="height: 500px" alt="slide 2">
+                <div class="info position-absolute top-50 translate-middle-y ms-5 col-xxl-4 col-lg-5 col-md-7">
+                  <span class="badge rounded-pill text-bg-warning mb-3">Free Shipping - Orders Over $100</span>
+                  <h1 class="text-dark">Free Shipping on Orders Over <span class="text-success">$100</span></h1>
+                  <p class="text-secondary">Free Shipping to First-Time Customers Only, After Promotions and Discounts Are Applied.</p>
+                  <button class="btn btn-dark d-flex align-items-center"><span>Show Now </span><i class="bi bi-arrow-right mt-1 ms-1"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="category py-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>Featured Categories</h3>
+            <div>
+              <button class="btn btn-outline-success btn-sm rounded-circle" data-bs-target="#categoryCarousel"
+                data-bs-slide="prev"><i class="bi bi-arrow-left-short h4"></i></button>
+              <button class="btn btn-outline-success btn-sm rounded-circle" data-bs-target="#categoryCarousel"
+                data-bs-slide="next"><i class="bi bi-arrow-right-short h4"></i></button>
+            </div>
+          </div>
+          <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-dairy-bread-eggs.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Dairy, Bread & Eggs</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-snack-munchies.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Snacks & Munchies</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-bakery-biscuits.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Bakery & Biscuits</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-instant-food.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Instant Food</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-tea-coffee-drinks.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Tea, Coffee & Drinks</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-atta-rice-dal.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Atta, Rice & Dal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-baby-care.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Baby Care</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-chicken-meat-fish.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Chicken, Meat & Fish</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-cleaning-essentials.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Cleaning Essentials</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-pet-care.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Pet Care</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-snack-munchies.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Snacks & Munchies</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xxl-2">
+                    <div class="card p-1">
+                      <img src="images/category/category-cold-drinks-juices.jpg" class="card-img-top" alt="Dairy">
+                      <div class="card-body text-center">
+                        <p class="card-text">Cold, Drinks & Juices</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sales py-5">
+          <div class="row">
+            <div class="col-12 col-md-6 position-relative">
+              <img src="images/banner/grocery-banner.png" class="d-block w-100" alt="...">
+              <div class="info position-absolute top-50 translate-middle-y ms-5 col-xxl-5 col-lg-6 col-md-8">
+                <h3 class="text-dark">Fruits & Vegetables</h3>
+                <p class="text-secondary">Get Upto 30% Off</p>
+                <button class="btn btn-dark">Show Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 position-relative mt-4 mt-md-0">
+              <img src="images/banner/grocery-banner-2.jpg" class="d-block w-100" alt="...">
+              <div class="info position-absolute top-50 translate-middle-y ms-5 col-xxl-5 col-lg-6 col-md-8">
+                <h3 class="text-dark">Freshly Baked Buns</h3>
+                <p class="text-secondary">Get Upto 25% Off</p>
+                <button class="btn btn-dark">Show Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products py-5">
+          <h3 class="mb-4">Popular Products</h3>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-1.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-danger">Sale</span>
+                    <span class="badge text-bg-success">10%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Snack & Munchies</p>
+                  <p class="card-title fw-bold my-1">Haldiram's Sev Bhujia</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $21.6 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-2.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2"></div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Bakery & Biscuits</p>
+                  <p class="card-title fw-bold my-1">NutriChoice Digestive</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $24 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-3.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-danger">Buy 1 Get $4.00 Off</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Bakery & Biscuits</p>
+                  <p class="card-title fw-bold my-1">Cadbury 5 Star Chocolate</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $35 <span class="text-decoration-line-through text-secondary fw-normal">$35</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-4.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-danger">Hot</span>
+                    <span class="badge text-bg-success">40%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Snack & Munchies</p>
+                  <p class="card-title fw-bold my-1">Onion Flavour Potato</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $3 <span class="text-decoration-line-through text-secondary fw-normal">$5</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-5.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-success">35%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Instant Food</p>
+                  <p class="card-title fw-bold my-1">Salted Instant Popcorn</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $11.7 <span class="text-decoration-line-through text-secondary fw-normal">$18</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-3.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-danger">Buy 1 Get $4.00 Off</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Bakery & Biscuits</p>
+                  <p class="card-title fw-bold my-1">Cadbury 5 Star Chocolate</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $35 <span class="text-decoration-line-through text-secondary fw-normal">$35</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-1.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-danger">Sale</span>
+                    <span class="badge text-bg-success">10%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Snack & Munchies</p>
+                  <p class="card-title fw-bold my-1">Haldiram's Sev Bhujia</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $21.6 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-6.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-success">40%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Dairy, Bread & Eggs</p>
+                  <p class="card-title fw-bold my-1">Blueberry Greek Yogurt</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $14.4 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-7.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Dairy, Bread & Eggs</p>
+                  <p class="card-title fw-bold my-1">Britannia Cheese Slices</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $24 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-8.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-success">15%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Instant Food</p>
+                  <p class="card-title fw-bold my-1">Kellogg's Original Cereals</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $29.75 <span class="text-decoration-line-through text-secondary fw-normal">$35</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-2.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2"></div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Bakery & Biscuits</p>
+                  <p class="card-title fw-bold my-1">NutriChoice Digestive</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $24 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-9.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2"></div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Snack & Munchies</p>
+                  <p class="card-title fw-bold my-1">Slurrp Millet Chocolate</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $0 <span class="text-decoration-line-through text-secondary fw-normal">$0</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-10.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2">
+                    <span class="badge text-bg-success">25%</span>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Dairy, Bread & Eggs</p>
+                  <p class="card-title fw-bold my-1">Amul Butter - 500g</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $13.5 <span class="text-decoration-line-through text-secondary fw-normal">$18</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-2.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2"></div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Bakery & Biscuits</p>
+                  <p class="card-title fw-bold my-1">NutriChoice Digestive</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $24 <span class="text-decoration-line-through text-secondary fw-normal">$24</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="images/products/product-img-9.jpg" class="card-img-top" alt="...">
+                  <div class="info position-absolute top-0 d-flex flex-column gap-1 ms-2 mt-2"></div>
+                </div>
+                <div class="card-body pt-0">
+                  <p class="card-text m-0 text-secondary">Snack & Munchies</p>
+                  <p class="card-title fw-bold my-1">Slurrp Millet Chocolate</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                    <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                    <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                  </div>
+                  <div class="d-flex fw-bold justify-content-between align-items-center">
+                    <span>
+                      $0 <span class="text-decoration-line-through text-secondary fw-normal">$0</span>
+                    </span>
+                    <a href="#" class="btn btn-success">+ Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="best-sells pt-2 pb-5">
+          <h3 class="mb-4">Popular Products</h3>
+          <div class="table-responsive-xl pb-3">
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 flex-nowrap">
+              <div class="col position-relative">
+                <img src="images/banner/banner-deal.jpg" alt="Banner Deal" class="img-fluid rounded h-100">
+                <div class="info position-absolute top-0 mt-4 ms-4">
+                  <h4 class="text-white fw-bold">100% Organic Coffee Beans.</h4>
+                  <p class="text-white">Get the best deal before close.</p>
+                  <button class="btn btn-success d-flex align-items-center"><span>Show Now </span><i class="bi bi-arrow-right mt-1 ms-1"></i></button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/products/product-img-11.jpg" class="card-img-top" alt="...">
+                  <div class="card-body pt-0">
+                    <p class="card-text m-0 text-secondary">Tea, Coffee & Drinks</p>
+                    <p class="card-title fw-bold my-1">Roast Ground Coffee</p>
+                    <div class="d-flex fw-bold justify-content-between align-items-center my-2">
+                      <span>
+                        $13.5 <span class="text-decoration-line-through text-secondary fw-normal">$18</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                        <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-success w-100">+ Add</a>
+                    <div class="countdown w-100 row text-center mx-auto mt-2 g-2">
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">1345</span>
+                          <span class="text-secondary">Days</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">16</span>
+                          <span class="text-secondary">Hours</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">30</span>
+                          <span class="text-secondary">Mins</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">12</span>
+                          <span class="text-secondary">Sec</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/products/product-img-12.jpg" class="card-img-top" alt="...">
+                  <div class="card-body pt-0">
+                    <p class="card-text m-0 text-secondary">Fruits & Vegetables</p>
+                    <p class="card-title fw-bold my-1">Crushed Tomatoes</p>
+                    <div class="d-flex fw-bold justify-content-between align-items-center my-2">
+                      <span>
+                        $13.5 <span class="text-decoration-line-through text-secondary fw-normal">$18</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                        <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-success w-100">+ Add</a>
+                    <div class="countdown w-100 row text-center mx-auto mt-2 g-2">
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">1345</span>
+                          <span class="text-secondary">Days</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">16</span>
+                          <span class="text-secondary">Hours</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">30</span>
+                          <span class="text-secondary">Mins</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">12</span>
+                          <span class="text-secondary">Sec</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/products/product-img-13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body pt-0">
+                    <p class="card-text m-0 text-secondary">Fruits & Vegetables</p>
+                    <p class="card-title fw-bold my-1">Golden Pineapple</p>
+                    <div class="d-flex fw-bold justify-content-between align-items-center my-2">
+                      <span>
+                        $14.4 <span class="text-decoration-line-through text-secondary fw-normal">$18</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                        <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                        <span class="ms-2 text-secondary fw-bold">4.3 (4)</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-success w-100">+ Add</a>
+                    <div class="countdown w-100 row text-center mx-auto mt-2 g-2">
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">1345</span>
+                          <span class="text-secondary">Days</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">16</span>
+                          <span class="text-secondary">Hours</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">30</span>
+                          <span class="text-secondary">Mins</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="border rounded">
+                          <span class="d-block fw-bold">12</span>
+                          <span class="text-secondary">Sec</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="bi bi-clock fs-1 text-success"></i>
+              <p class="fw-bold my-3">10 minute grocery now</p>
+              <p class="text-secondary">
+                Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="bi bi-gift fs-1 text-success"></i>
+              <p class="fw-bold my-3">Best Prices & Offers</p>
+              <p class="text-secondary">
+                Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="bi bi-menu-button-wide fs-1 text-success"></i>
+              <p class="fw-bold my-3">Wide Assortment</p>
+              <p class="text-secondary">
+                Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="bi bi-arrow-repeat fs-1 text-success"></i>
+              <p class="fw-bold my-3">Easy Returns</p>
+              <p class="text-secondary">
+                Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy .
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="position-fixed bottom-0 end-0 me-3 mb-3">
+          <button class="btn btn-dark"><i class="bi bi-cart3"></i> Buy Now</button>
+        </div>
+      </main>
+      <footer class="container">
+        <div class="row g-4 py-5">
+          <div class="col-lg-4 col-md-12 col-12">
+            <h5 class="mb-3">Categories</h5>
+            <div class="row">
+              <div class="col-6">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Vegetables & Fruits</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Breakfast & instant food</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Bakery & Biscuits</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Atta, rice & dal</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sauces & spreads</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Organic & gourmet</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Baby care</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cleaning essentials</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Personal care</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dairy, bread & eggs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cold drinks & juices</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tea, coffee & drinks</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Masala, oil & more</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chicken, meat & fish</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Paan corner</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pharma & wellness</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home & office</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pet care</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <h5 class="mb-3">Get to know us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Company</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help Center</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Value</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <h5 class="mb-3">For Consumers</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Payments</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Product Returns</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shop Checkout</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <h5 class="mb-3">Become a Shopper</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shopper Opportunities</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Shopper</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Earnings</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ideas & Guides</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">New Retailers</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <h5 class="mb-3">Freshcart programs</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Freshcart programs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Cards</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Promos & Coupons</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Freshcart Ads</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pt-4 border-top">
+            <ul class="list-unstyled align-items-center d-flex m-0">
+              <li>
+                Payment Partners
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#">
+                  <img src="images/payment/amazonpay.svg" alt="">
+                </a>
+              </li>
+              <li class="ms-1">
+                <a class="link-body-emphasis" href="#">
+                  <img src="images/payment/american-express.svg" alt="">
+                </a>
+              </li>
+              <li class="ms-1">
+                <a class="link-body-emphasis" href="#">
+                  <img src="images/payment/mastercard.svg" alt="">
+                </a>
+              </li>
+              <li class="ms-1">
+                <a class="link-body-emphasis" href="#">
+                  <img src="images/payment/paypal.svg" alt="">
+                </a>
+              </li>
+              <li class="ms-1">
+                <a class="link-body-emphasis" href="#">
+                  <img src="images/payment/visa.svg" alt="">
+                </a>
+              </li>
+            </ul>
+            <ul class="list-unstyled align-items-center d-flex flex-column flex-lg-row m-0 mt-3 mt-lg-0">
+              <li class="ms-3 me-4">
+                Get deliveries with FreshCart
+              </li>
+              <ul class="list-unstyled d-flex mt-2 mt-lg-0">
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <img src="images/store/appstore-btn.svg" alt="">
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <img src="images/store/googleplay-btn.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center py-4 border-top">
+            <p class="m-0">© 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved. Powered by <span class="text-success">Codescandy.</span></p>
+            <ul class="list-unstyled d-flex align-items-center mt-3 mt-md-0 m-0">
+              <li>
+                Follow us on
+              </li>
+              <li class="ms-3 border rounded py-1 px-2">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="ms-3 border rounded py-1 px-2">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li class="ms-3 border rounded py-1 px-2">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
